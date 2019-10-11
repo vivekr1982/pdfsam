@@ -38,7 +38,7 @@ import javafx.scene.layout.VBox;
  */
 class PreferenceBehaviorPane extends GridPane {
 
-    @Inject
+    /*@Inject
     public PreferenceBehaviorPane(@Named("checkForUpdates") PreferenceCheckBox checkForUpdates,
             @Named("playSounds") PreferenceCheckBox playSounds,
             @Named("donationNotification") PreferenceCheckBox donationNotification,
@@ -62,6 +62,6 @@ class PreferenceBehaviorPane extends GridPane {
 
         getStyleClass().addAll(Style.CONTAINER.css());
         getStyleClass().addAll(Style.GRID.css());
-    }
+    }*/
 
 }

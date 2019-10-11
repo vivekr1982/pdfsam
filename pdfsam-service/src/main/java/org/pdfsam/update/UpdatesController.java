@@ -54,7 +54,7 @@ public class UpdatesController {
         eventStudio().addAnnotatedListeners(this);
     }
 
-    @EventListener
+    /*@EventListener
     public void checkForUpdates(UpdateCheckRequest event) {
         LOG.debug(DefaultI18nContext.getInstance().i18n("Checking for updates"));
         CompletableFuture.supplyAsync(service::getLatestVersion).thenAccept(current -> {
@@ -71,5 +71,5 @@ public class UpdatesController {
                 LOG.warn(DefaultI18nContext.getInstance().i18n("Unable to find the latest available version."), e);
             }
         });
-    }
+    }*/
 }

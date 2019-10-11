@@ -39,13 +39,13 @@ class BannerButtons extends HBox {
     @Inject
     BannerButtons(LogButton logButton, DashboardButton dashboardButton, NewsButton newsButton, MenuButton menuButton) {
         getStyleClass().addAll("pdfsam-container", "pdfsam-banner-buttons");
-        newsButton.setDisable(true);
-        getChildren().addAll(dashboardButton, logButton, newsButton, menuButton);
+        //newsButton.setDisable(true);
+        getChildren().addAll(dashboardButton/*, logButton, newsButton, menuButton*/);
         eventStudio().add(LatestNewsEvent.class, (e) -> {
             if (!e.latestNews.isEmpty()) {
                 Platform.runLater(() -> {
-                    newsButton.setDisable(false);
-                    newsButton.setUpToDate(e.isUpToDate);
+                    /*newsButton.setDisable(false);
+                    newsButton.setUpToDate(e.isUpToDate);*/
                 });
             }
         } , Integer.MAX_VALUE, ReferenceStrength.STRONG);

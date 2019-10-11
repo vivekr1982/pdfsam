@@ -72,9 +72,9 @@ public class AboutDashboardPane extends HBox {
         FontAwesomeIconFactory.get().setIcon(copyright, FontAwesomeIcon.COPYRIGHT);
         left.getChildren().addAll(new Label(String.format("ver. %s", pdfsam.property(VERSION))), copyright);
         addHyperlink(null, pdfsam.property(LICENSE_URL), pdfsam.property(LICENSE_NAME), left);
-        addHyperlink(FontAwesomeIcon.HOME, pdfsam.property(HOME_URL), pdfsam.property(HOME_LABEL), left);
-        addHyperlink(FontAwesomeIcon.RSS_SQUARE, pdfsam.property(FEED_URL),
-                DefaultI18nContext.getInstance().i18n("Subscribe to the official news feed"), left);
+        addHyperlink(FontAwesomeIcon.HOME, "Powered By PDFSam("+pdfsam.property(HOME_URL)+")", pdfsam.property(HOME_LABEL), left);
+        /*addHyperlink(FontAwesomeIcon.RSS_SQUARE, pdfsam.property(FEED_URL),
+                DefaultI18nContext.getInstance().i18n("Subscribe to the official news feed"), left);*/
 
         addSectionTitle(DefaultI18nContext.getInstance().i18n("Environment"), left);
         Label runtime = new Label(String.format("%s %s", System.getProperty("java.runtime.name"),
@@ -99,7 +99,7 @@ public class AboutDashboardPane extends HBox {
         });
         left.getChildren().addAll(runtime, vendor, runtimePath, fx, memory, copyButton);
 
-        VBox right = new VBox(5);
+        /*VBox right = new VBox(5);
         addSectionTitle(DefaultI18nContext.getInstance().i18n("Support"), right);
         addHyperlink(FontAwesomeIcon.BUG, pdfsam.property(TRACKER_URL),
                 DefaultI18nContext.getInstance().i18n("Bug and feature requests"), right);
@@ -120,8 +120,8 @@ public class AboutDashboardPane extends HBox {
         addHyperlink(FontAwesomeIcon.TWITTER_SQUARE, pdfsam.property(TWITTER_URL),
                 DefaultI18nContext.getInstance().i18n("Follow us on Twitter"), right);
         addHyperlink(FontAwesomeIcon.FACEBOOK_SQUARE, pdfsam.property(FACEBOOK_URL),
-                DefaultI18nContext.getInstance().i18n("Like us on Facebook"), right);
-        getChildren().addAll(left, right);
+                DefaultI18nContext.getInstance().i18n("Like us on Facebook"), right);*/
+        getChildren().addAll(left/*, right*/);
     }
 
     private void addSectionTitle(String title, Pane pane) {

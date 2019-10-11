@@ -641,5 +641,11 @@
 			<artifactId>jdepend</artifactId>
 			<scope>test</scope>
 		</dependency>
+		<dependency>
+			<groupId>org.pdfsam</groupId>
+			<artifactId>redact</artifactId>
+			<version>4.0.5-SNAPSHOT</version>
+			<scope>compile</scope>
+		</dependency>
 	</dependencies>
 </project>

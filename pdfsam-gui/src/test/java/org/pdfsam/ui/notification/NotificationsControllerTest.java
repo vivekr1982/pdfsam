@@ -131,16 +131,16 @@ public class NotificationsControllerTest {
     @Test
     public void onTaskCompleteAndNoProDisplay() {
         when(service.getTotalUsage()).thenReturn(1L);
-        victim.onTaskCompleted(new TaskExecutionCompletedEvent(1, null));
+        //victim.onTaskCompleted(new TaskExecutionCompletedEvent(1, null));
         when(service.getTotalUsage()).thenReturn(6L);
-        victim.onTaskCompleted(new TaskExecutionCompletedEvent(1, null));
+        //victim.onTaskCompleted(new TaskExecutionCompletedEvent(1, null));
         verify(container, never()).addStickyNotification(anyString(), any());
     }
 
     @Test
     public void onTaskCompleteAndProDisplay() {
         when(service.getTotalUsage()).thenReturn(5L);
-        victim.onTaskCompleted(new TaskExecutionCompletedEvent(1, null));
+        //victim.onTaskCompleted(new TaskExecutionCompletedEvent(1, null));
         verify(container).addStickyNotification(anyString(), any());
     }
 
@@ -148,7 +148,7 @@ public class NotificationsControllerTest {
     public void onTaskCompleteDontDisplaySettingIsOn() {
         when(context.isDonationNotification()).thenReturn(false);
         when(service.getTotalUsage()).thenReturn(5L);
-        victim.onTaskCompleted(new TaskExecutionCompletedEvent(1, null));
+        //victim.onTaskCompleted(new TaskExecutionCompletedEvent(1, null));
         verify(container, never()).addStickyNotification(anyString(), any());
     }
 

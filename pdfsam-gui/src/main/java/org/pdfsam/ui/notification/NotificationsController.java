@@ -109,7 +109,7 @@ public class NotificationsController {
         }
     }
 
-    @EventListener
+    /*@EventListener
     public void onTaskCompleted(@SuppressWarnings("unused") TaskExecutionCompletedEvent e) {
         long usages = service.getTotalUsage();
         if ((usages % TIMES_BEFORE_ENTERPRISE_NOTICE) == 0 && userContext.isDonationNotification()) {
@@ -119,7 +119,7 @@ public class NotificationsController {
                 addShareNotification(usages);
             }
         }
-    }
+    }*/
 
     private void addDonationNotification(long usages) {
         VBox content = new VBox(3,

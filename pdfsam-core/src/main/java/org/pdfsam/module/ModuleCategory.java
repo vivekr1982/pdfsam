@@ -30,6 +30,7 @@ public enum ModuleCategory {
     SPLIT(DefaultI18nContext.getInstance().i18n("Split")),
     MERGE(DefaultI18nContext.getInstance().i18n("Merge")),
     SECURITY(DefaultI18nContext.getInstance().i18n("Security")),
+    REDACT(DefaultI18nContext.getInstance().i18n("Redact")),
     OTHER(DefaultI18nContext.getInstance().i18n("Other"));
 
     private String description;

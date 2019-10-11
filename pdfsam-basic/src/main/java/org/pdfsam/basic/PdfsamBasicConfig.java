@@ -88,7 +88,7 @@ public class PdfsamBasicConfig {
     @Provides
     @Auto
     public Pdfsam pdfsam() throws IOException {
-        return new PdfsamBasic("PDF Split and Merge Basic Edition", "PDFsam Basic");
+        return new PdfsamBasic("Danskscanning Online PDF Editor", "DS PDF Editor");
     }
 
     @Provides

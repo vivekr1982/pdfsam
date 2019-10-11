@@ -53,7 +53,7 @@ public class ModulesDashboardPane extends VBox {
         eventStudio().addAnnotatedListeners(this);
     }
 
-    @EventListener
+    /*@EventListener
     public void onPremiumModules(PremiumModulesEvent e) {
         if (!e.premiumModules.isEmpty()) {
             Label premiumTile = new Label(DefaultI18nContext.getInstance().i18n("Premium features"));
@@ -64,5 +64,5 @@ public class ModulesDashboardPane extends VBox {
                     .forEach(modulesPane.getChildren()::add);
             Platform.runLater(() -> this.getChildren().addAll(premiumTile, modulesPane));
         }
-    }
+    }*/
 }

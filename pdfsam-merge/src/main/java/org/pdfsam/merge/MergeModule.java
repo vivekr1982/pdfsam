@@ -70,8 +70,8 @@ public class MergeModule extends BaseTaskExecutionModule {
     private ModuleDescriptor descriptor = builder().category(ModuleCategory.MERGE)
             .inputTypes(ModuleInputOutputType.MULTIPLE_PDF).name(DefaultI18nContext.getInstance().i18n("Merge"))
             .description(DefaultI18nContext.getInstance()
-                    .i18n("Merge together multiple PDF documents or subsections of them."))
-            .priority(ModulePriority.HIGH.getPriority()).supportURL("https://pdfsam.org/pdf-merge/").build();
+                    .i18n("Merges multiple PDF documents or subsections of them."))
+            .priority(ModulePriority.HIGH.getPriority()).build();
 
     @Inject
     public MergeModule(@Named(MODULE_ID + "field") BrowsablePdfOutputField destinationFileField,

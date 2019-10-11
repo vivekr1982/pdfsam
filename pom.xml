@@ -10,7 +10,7 @@
 	<url>https://pdfsam.org</url>
 
 	<organization>
-		<name>Sober Lemur S.a.s. di Vacondio Andrea</name>
+		<name>Danskscanning A/S</name>
 	</organization>
 
 	<scm>
@@ -143,7 +143,8 @@
 		<module>pdfsam-rotate</module>
 		<module>pdfsam-extract</module>
 		<module>pdfsam-docs</module>
-	</modules>
+        <module>redact</module>
+    </modules>
 
 	<developers>
 		<developer>
@@ -299,6 +300,7 @@
 		<pdfsam.builddate>${maven.build.timestamp}</pdfsam.builddate>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<maven.javadoc.failOnError>false</maven.javadoc.failOnError>
+
 	</properties>
 
 	<dependencyManagement>
